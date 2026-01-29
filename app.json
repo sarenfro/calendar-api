@@ -1,0 +1,24 @@
+{
+  "name": "Team Calendar Scheduler",
+  "description": "Find free time slots across team calendars - similar to Microsoft Bookings",
+  "repository": "https://github.com/yourusername/calendar-api",
+  "keywords": ["calendar", "scheduling", "booking", "ics", "team"],
+  "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    }
+  }
+}
