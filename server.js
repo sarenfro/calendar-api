@@ -222,6 +222,14 @@ app.post('/api/calendars/upload', upload.single('calendar'), (req, res) => {
 });
 
 /**
+ * fixing fetch
+ */
+app.get("/", (req, res) => {
+  res.send("API is running");
+});
+
+
+/**
  * Get all team calendars
  */
 app.get('/api/calendars', (req, res) => {
