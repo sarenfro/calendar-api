@@ -222,10 +222,12 @@ app.post('/api/calendars/upload', upload.single('calendar'), (req, res) => {
 });
 
 /**
- * fixing fetch
+ * fixing fetch v2
  */
+const path = require('path');
+
 app.get("/", (req, res) => {
-  res.send("API is running");
+  res.sendFile(path.join(__dirname, 'client.html'));
 });
 
 
